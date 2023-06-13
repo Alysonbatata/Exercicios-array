@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+        body {
+          background-color: rgb(151, 151, 108);
+          text-align: center;
+          margin-top: 30%;
+        }
+    
+        h1, h2, p, a {
+          color: rgb(180, 241, 182);
+          font-family: Roboto Condensed;
+          text-decoration: none;
+          gap: 10%;
+        }
+    
+        button {
+          color: rgb(79, 79, 79);
+          background-color: rgb(132, 97, 97);
+          border: none;
+          border-radius: 10px;
+          width: 10%;
+          height: 10%;
+          margin-right: 20px;
+          margin-top: 5px;
+          padding: 10px;
+        }
+      </style>
+</head>
+
+<body>
+    <h2>Arrays map() em JavaScript</h2>
+
+    <p>Retornar uma nova matriz com a raiz quadrada de todos os valores de elemento:</p>
+    <p>O método Array.map() cria uma nova matriz a partir dos resultados da chamada de uma função para cada elemento.</p>
+    <p id="demo"></p>
+
+    <button onclick="clicou()">Verificar</button>
+    <script>
+  
+      function clicou() {
+        let p = Number(window.prompt(`Qual é o primeiro numero que você quer verificar?`))
+    
+        let s = Number(window.prompt(`Qual é o segundo numero que você quer verificar?`))
+        
+        let t = Number(window.prompt(`Qual é o terceiro numero que você quer verificar?`))
+        
+        let q = Number(window.prompt(`Qual é o quarto numero que você quer verificar?`))
+        
+
+        const numeros = [p, s, t, q];
+        document.getElementById("demo").innerHTML = numeros.map(Math.sqrt);
+      }
+    </script>
+</body>
+
+</html>
